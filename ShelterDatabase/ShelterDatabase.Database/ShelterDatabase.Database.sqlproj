@@ -56,5 +56,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Animal.sql" />
+    <Build Include="Tables\Shelter.sql" />
+    <Build Include="Tables\Volunteer.sql" />
+    <Build Include="Tables\ShelterZone.sql" />
+    <Build Include="Tables\VolunteerShift.sql" />
+    <Build Include="Tables\VolunteerShiftAssignment.sql" />
+    <Build Include="Tables\AnimalHealthRecord.sql" />
+    <Build Include="Tables\UserRole.sql" />
+    <Build Include="Tables\AnimalTreatment.sql" />
+    <Build Include="Tables\AnimalMedia.sql" />
   </ItemGroup>
 </Project>
