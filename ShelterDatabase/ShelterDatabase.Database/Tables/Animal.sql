@@ -10,5 +10,6 @@
 	[UbicationName] NVARCHAR(50),
 	[UbicationPoint] GEOGRAPHY,
 	[Status] NVARCHAR(50) NOT NULL,
+	[MicrochipId] NVARCHAR(50),
 	[ShelterId] INT NOT NULL FOREIGN KEY REFERENCES Shelter(Id)
 )
